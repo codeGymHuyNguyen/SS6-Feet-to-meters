@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feet to meters</title>
+</head>
+<body>
+<script>
+    function foottoMeter(foot) {
+        let meter;
+        meter = 0.305 * foot;
+        return meter;
+    }
+    function metertoFoot(meter) {
+        let foot;
+        foot = 3.279 * meter;
+        return foot;
+    }
+    let feetValue = parseFloat(prompt('Input feet value:'));
+    let toMeter = foottoMeter(feetValue);
+    alert(toMeter);
+    let meterValue = parseFloat(prompt('Input meter value:'));
+    let toFoot = metertoFoot(meterValue);
+    alert(toFoot);
+</script>
+</body>
+</html>
